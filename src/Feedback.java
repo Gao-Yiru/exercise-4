@@ -37,7 +37,8 @@ public class Feedback {
 
     private String feedbackUsingConcatenation(String sent1,String sent2,String sent3,String sent4,String sent5){
         String concatenatedFeedback="";
-        concatenatedFeedback = sent1+" "+sent2+" "+sent3+" "+sent4+" "+sent5;
+        concatenatedFeedback = sent1+" ";
+        concatenatedFeedback += sent2+" "+sent3+" "+sent4+" "+sent5;
         return concatenatedFeedback;
     }
 
