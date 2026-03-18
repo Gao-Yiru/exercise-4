@@ -21,6 +21,10 @@ public  class Main {
         Feedback feedBack = new Feedback("Alice", "Beauty", "4923das@163.com");
         feedBack.analyseFeedBack(false, sent1, sent2, sent3, sent4, sent5); 
         System.out.println(feedBack);
+
+        UserRegistration userReg = new UserRegistration();
+        userReg.registration();
+        System.out.println("\n" + userReg);
     }
     
 }
