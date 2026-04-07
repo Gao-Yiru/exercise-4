@@ -1,7 +1,6 @@
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
-
 public class BikeRequest {
     private String userEmail;
     private String location;
@@ -12,21 +11,14 @@ public class BikeRequest {
         this.location = location;
         this.requestTime = requestTime;
     }
-    public String getLocation() {
-        return location;
-    }
 
-    public LocalDateTime getRequestTime() {
-        return requestTime;
-    }
+    public String getUserEmail() { return userEmail; }
+    public String getLocation() { return location; }
+    public LocalDateTime getRequestTime() { return requestTime; }
 
     @Override
     public String toString() {
-        return userEmail + " requested a bike at " + location + " on " + requestTime.format(DateTimeFormatter.ISO_LOCAL_DATE_TIME);
+        return userEmail + " requested a bike at " + location +
+                " on " + requestTime.format(DateTimeFormatter.ISO_LOCAL_DATE_TIME);
     }
-
-    public String getUserEmail() {
-        return userEmail;
-    }
-
 }
